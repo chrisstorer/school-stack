@@ -1,0 +1,7 @@
+version: '3.1'
+services:
+  certbot:
+    build: ./
+    volumes:
+      - "~/certs:/etc/letsencrypt/"
+    tty: true
